@@ -16,7 +16,7 @@ function App() {
   const [sections, setSections] = useState([
     {
       title: "Render Props",
-      description: "Render Props es un patrón que consiste en pasar una función a un componente hijo para que este la ejecute y retorne un JSX.",
+      description: "A render prop is a prop on a component, which value is a function that returns a JSX element. The component itself does not render anything besides the render prop. Instead, the component simply calls the render prop, instead of implementing its own rendering logic.",
       component: [<RenderProps1 key="1"/>, <RenderProps2 key="2"/>],
       active: false,
     },
@@ -88,12 +88,12 @@ function App() {
   return (
     <>
       <header>
-        <h1>🌱 Patrones de renderizado y composición en React 🌿</h1>
-        <button onClick={activateNextSection}>Activar ejemplo del siguiente patrón</button>
+        <h1>🌱 Render Patter and Composition Patter in React 🌿</h1>
+        <button onClick={activateNextSection}>Show next pattern</button>
       </header>
       <section className="Patterns">
         {sections.length === 0 ? (
-          <p>No hay secciones disponibles.</p>
+          <p>No sections available.</p>
         ) : (
           sections.map((section, index) =>
             section.active ? (
@@ -108,8 +108,6 @@ function App() {
       </section>
       <footer>
         <p>
-          <span>Made with 💚 and 👩🏻‍💻</span>
-          <span>by Teffcode and Platzi</span>
         </p>
       </footer>
     </>
