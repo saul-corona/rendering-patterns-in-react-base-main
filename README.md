@@ -1,4 +1,4 @@
-# Render Patter and Composition Patter in React
+# My notes about Render Patter and Composition Patter in React
 
 1. Clone repo
 2. Install dependencies `npm install`.
