@@ -88,7 +88,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>🌱 Render Patter and Composition Patter in React 🌿</h1>
+        <h1>⚛️ Render Patter and Composition Patter in React</h1>
         <button onClick={activateNextSection}>Show next pattern</button>
       </header>
       <section className="Patterns">
